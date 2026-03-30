@@ -80,7 +80,7 @@ Give 3–4 bullet points.
 """
 
     response = client.chat.completions.create(
-        model="llama3-70b-8192",   # working model
+        model="llama-3.1-8b-instant",   # working model
         messages=[{"role": "user", "content": prompt}]
     )
 
