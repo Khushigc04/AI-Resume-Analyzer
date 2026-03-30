@@ -14,7 +14,7 @@ load_dotenv()
 # -----------------------------
 # STEP 1: LOAD RESUME
 # -----------------------------
-loader = PyPDFLoader("resume.pdf")
+loader = PyPDFLoader(tmp_path)
 documents = loader.load()
 
 print("Resume loaded successfully!")

@@ -16,7 +16,8 @@ st.title("AI Resume Analyzer (RAG System)")
 st.write("Upload your resume and get AI-powered insights.")
 
 # Upload file
-uploaded_file = st.file_uploader("Upload your resume (PDF)", type="pdf")
+if uploaded_file is not None:
+    documents = load_uploaded_pdf(uploaded_file)
 
 if uploaded_file:
 
